@@ -29,13 +29,17 @@ Set dataPemicuSelectedRange = dataPemicuMainWS.Range("G14:Z" & dataPemicuLastRow
 Sheets("DATA PEMICU").Select
 Range("G5:X" & dataPemicuLastRow).Select
 Selection.Locked = True
+
+Sheets("DATA PEMICU").Select
+Range("K16:K" & dataPemicuLastRow).Select
+Selection.Locked = False
  
 Sheets("DATA PEMICU").Select
-Range("U14:V" & dataPemicuLastRow).Select
+Range("U14:U" & dataPemicuLastRow).Select
 Selection.Locked = False
 
 Sheets("DATA PEMICU").Select
-Range("G6:M10").Select
+Range("G6:M11").Select
 Selection.Locked = False
  
 dataPemicuMainWS.Protect DrawingObjects:=True, Contents:=True, Scenarios:=True, AllowSorting:=True, AllowFormattingCells:=True, AllowFormattingColumns:=True, AllowFiltering:=True, Password:=ThisWorkbook.Names("password").Value
@@ -50,8 +54,6 @@ Dim pengujiMainWS As Worksheet
 
 Set dataPengujiMainWS = Worksheets("DATA PENGUJI")
 
-' =================Replace Value======================
-' ================= Last Row ======================
 dataPengujiLastRow = dataPengujiMainWS.Cells.Find("*", SearchOrder:=xlByRows, _
 SearchDirection:=xlPrevious).Row
 
@@ -64,15 +66,15 @@ Range("G5:X" & dataPengujiLastRow).Select
 Selection.Locked = True
  
 Sheets("DATA PENGUJI").Select
-Range("I16:I" & dataPengujiLastRow).Select
+Range("K16:K" & dataPengujiLastRow).Select
 Selection.Locked = False
 
 Sheets("DATA PENGUJI").Select
-Range("U14:V" & dataPengujiLastRow).Select
+Range("U14:U" & dataPengujiLastRow).Select
 Selection.Locked = False
 
 Sheets("DATA PENGUJI").Select
-Range("G6:M10").Select
+Range("G5:M10").Select
 Selection.Locked = False
  
 dataPengujiMainWS.Protect DrawingObjects:=True, Contents:=True, Scenarios:=True, AllowSorting:=True, AllowFiltering:=True, Password:=ThisWorkbook.Names("password").Value
