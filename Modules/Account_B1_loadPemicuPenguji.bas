@@ -58,9 +58,6 @@ SearchDirection:=xlPrevious).Row
 ' ======================================= Copy empty template ==================================
     MainWS.Rows("29:9999").Delete
     Sheets("MASTER").Range("AB10:AI25").Copy MainWS.Range("G29")
-'    MainWS.Select
-'    Range("G29").Select
-'    ActiveSheet.Paste
     
     MainWS.UsedRange.Replace What:="COUNTA($H$29:$H$30))", Replacement:="COUNTA($H$29:$H$31))", LookAt:= _
     xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
@@ -69,10 +66,6 @@ SearchDirection:=xlPrevious).Row
     Lv2WS.UsedRange.Replace What:="!#REF!", Replacement:="!$L$34", LookAt:= _
     xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
     FormulaVersion:=xlReplaceFormula2
-'
-'    Lv2WS.UsedRange.Replace What:="$L$29:$L$30", Replacement:="$L$29:$L$31", LookAt:= _
-'    xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
-'    FormulaVersion:=xlReplaceFormula2
 
 '============================Copy Data Pemicu to other Sheet to remove Formula=============================
 
@@ -106,9 +99,7 @@ With pengujiWS.Range("G15:X" & pengujiLastRow)
             pengujiWS.Range(pengujiResultLocation4 & pengujiLastRow).SpecialCells(xlCellTypeVisible).Copy MainWS.Range("K" & pengujiFirstRowDestination)
             pengujiWS.Range(pengujiResultLocation5 & pengujiLastRow).SpecialCells(xlCellTypeVisible).Copy MainWS.Range("L" & pengujiFirstRowDestination)
             
-   
     End If
-
 
 End With
 
