@@ -1,6 +1,12 @@
 Sub LoadPemicuPenguji()
+'=================unlock pemicupenguji======================
+Call LockEWS.unlockDetailPemicu
+Call LockEWS.unlockDetailPenguji
+Call LockEWS.unlockPemicu
+Call LockEWS.unlockPenguji
 
-Call ProgressBar.Progress(5)
+'=================Progress_Bar======================
+Call Progress_Bar.Progress(5)
 Application.Wait (Now + TimeValue("0:00:01"))
 
 Call Account_B1_loadPemicuAndPenguji
@@ -9,7 +15,7 @@ Call Account_B3_loadPemicuAndPenguji
 Call Account_B4_loadPemicuAndPenguji
 Call Account_B5_loadPemicuAndPenguji
 
-Call ProgressBar.Progress(25)
+Call Progress_Bar.Progress(25)
 Application.Wait (Now + TimeValue("0:00:01"))
 
 Call Account_C1_loadPemicuAndPenguji
@@ -23,7 +29,7 @@ Call Account_C8_loadPemicuAndPenguji
 Call Account_C9_loadPemicuAndPenguji
 Call Account_C10_loadPemicuAndPenguji
 
-Call ProgressBar.Progress(50)
+Call Progress_Bar.Progress(50)
 Application.Wait (Now + TimeValue("0:00:01"))
 
 Call Account_C11_loadPemicuAndPenguji
@@ -37,7 +43,7 @@ Call Account_E3_loadPemicuAndPenguji
 Call Account_E4_loadPemicuAndPenguji
 Call Account_E5_loadPemicuAndPenguji
 
-Call ProgressBar.Progress(75)
+Call Progress_Bar.Progress(75)
 Application.Wait (Now + TimeValue("0:00:01"))
 
 Call Account_E6_loadPemicuAndPenguji
@@ -55,7 +61,7 @@ Call Account_F4_loadPemicuAndPenguji
 Call Account_G1_loadPemicuAndPenguji
 Call Account_G2_loadPemicuAndPenguji
 
-Call ProgressBar.Progress(90)
+Call Progress_Bar.Progress(90)
 Application.Wait (Now + TimeValue("0:00:01"))
 
 Call Account_G3_loadPemicuAndPenguji
@@ -69,12 +75,23 @@ Call Account_M1_loadPemicuAndPenguji
 Call Account_M2_loadPemicuAndPenguji
 Call Account_M3_loadPemicuAndPenguji
 
-Call ProgressBar.Progress(99)
+Call Progress_Bar.Progress(99)
 Application.Wait (Now + TimeValue("0:00:01"))
 
 Call Account_P1_loadPemicuAndPenguji
 Call Account_Q1_loadPemicuAndPenguji
 
 Call ProgressBar.Progress(100, False)
+
+' ================= LockPemicuPenguji ======================
+
+Call LockEWS.lockDetailPemicu
+Call LockEWS.lockDetailPenguji
+Call LockEWS.lockPemicu
+Call LockEWS.lockPenguji
+
+Application.Wait (Now + TimeValue("0:00:5"))
+Unload Progress_Bar
+
 
 End Sub
