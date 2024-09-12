@@ -225,33 +225,51 @@ detailpemicuSelectedRange.EntireColumn.AutoFit
 
 ' ================= Set Data Validation Formatting ======================
 Call dataValidation.dataValidationPengujian_B1
-Call dataValidation.dataValidationPengujian_B1
-Call dataValidation.dataValidationPengujian_B2
 Call dataValidation.dataValidationPengujian_B2
 Call dataValidation.dataValidationPengujian_B3
-Call dataValidation.dataValidationPengujian_B3
-Call dataValidation.dataValidationPengujian_B4
 Call dataValidation.dataValidationPengujian_B4
 Call dataValidation.dataValidationPengujian_B5
-Call dataValidation.dataValidationPengujian_B5
-
-Call dataValidation.dataValidationPengujian_B6
-Call dataValidation.dataValidationPengujian_B6
-Call dataValidation.dataValidationPengujian_C1
 Call dataValidation.dataValidationPengujian_C1
 Call dataValidation.dataValidationPengujian_C2
-Call dataValidation.dataValidationPengujian_C2
-Call dataValidation.dataValidationPengujian_C3
 Call dataValidation.dataValidationPengujian_C3
 Call dataValidation.dataValidationPengujian_C4
-Call dataValidation.dataValidationPengujian_C4
-
 Call dataValidation.dataValidationPengujian_C5
-Call dataValidation.dataValidationPengujian_C5
-Call dataValidation.dataValidationPengujian_D1
-Call dataValidation.dataValidationPengujian_D1
-Call dataValidation.dataValidationPengujian_D2
-Call dataValidation.dataValidationPengujian_D2
+Call dataValidation.dataValidationPengujian_C6
+Call dataValidation.dataValidationPengujian_C7
+Call dataValidation.dataValidationPengujian_C8
+Call dataValidation.dataValidationPengujian_C9
+Call dataValidation.dataValidationPengujian_D
+Call dataValidation.dataValidationPengujian_E1
+Call dataValidation.dataValidationPengujian_E2
+Call dataValidation.dataValidationPengujian_E3
+Call dataValidation.dataValidationPengujian_E4
+Call dataValidation.dataValidationPengujian_E5
+Call dataValidation.dataValidationPengujian_E6
+Call dataValidation.dataValidationPengujian_E7
+Call dataValidation.dataValidationPengujian_E8
+Call dataValidation.dataValidationPengujian_E9
+Call dataValidation.dataValidationPengujian_E10
+Call dataValidation.dataValidationPengujian_E11
+Call dataValidation.dataValidationPengujian_E12
+Call dataValidation.dataValidationPengujian_E13
+Call dataValidation.dataValidationPengujian_F1
+Call dataValidation.dataValidationPengujian_F2
+Call dataValidation.dataValidationPengujian_F3
+Call dataValidation.dataValidationPengujian_F4
+Call dataValidation.dataValidationPengujian_G1
+Call dataValidation.dataValidationPengujian_G2
+Call dataValidation.dataValidationPengujian_G3
+Call dataValidation.dataValidationPengujian_G4
+Call dataValidation.dataValidationPengujian_H
+Call dataValidation.dataValidationPengujian_I
+Call dataValidation.dataValidationPengujian_J
+Call dataValidation.dataValidationPengujian_K
+Call dataValidation.dataValidationPengujian_L
+Call dataValidation.dataValidationPengujian_M1
+Call dataValidation.dataValidationPengujian_M2
+Call dataValidation.dataValidationPengujian_M3
+Call dataValidation.dataValidationPengujian_P
+Call dataValidation.dataValidationPengujian_Q
 
 
 ' ================= Lock ======================
