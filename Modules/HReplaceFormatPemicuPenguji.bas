@@ -253,6 +253,9 @@ Call dataValidation.dataValidationPengujian_D1
 Call dataValidation.dataValidationPengujian_D2
 Call dataValidation.dataValidationPengujian_D2
 
+' ================= Hide ======================
+
+Call ShowActiveSheet.VeryHiddenActiveSheet
 
 ' ================= Lock ======================
 
